@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>게시판</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		var search_btn;
+		$(document).ready(function(){
+			$("#search_btn").click(function(){
+				console.log("zzz");
+			});
+			
+			$("#login_btn").click(function(){
+				console.log("ddd");
+				form1.action="/bootstrap_login.html";
+
+			});
+			$("#signup_btn").click(function(){
+				console.log("www");
+			});
+		
+		
+		});
+	</script>
+	<body>
+		<div id="wrapper">
+			<div id ="top">
+				<nav class="navbar navbar-inverse">
+					<ul class="nav nav-pills" role="tablist" style="margin-top: 10px;margin-bottom: 5px;">
+						<li role="presentation" class="active" style="margin-left: 5px;margin-right: 5px;">
+						<a href="bootstrap_home.html">Home<span class="badge"></span></a>
+						</li>
+						<li role="presentation" class="active" style="margin-left: 5px;margin-right: 5px;">
+							<a href="bootstrap_login.html">로그인<span class="badge"></span></a>
+						</li>
+						<li role="presentation" class="active" style="margin-left: 5px;margin-right: 5px;">
+							<a href="bootstrap_list.html">글목록<span class="badge"></span></a>
+						</li>
+						<li role="presentation" class="active" style="margin-left: 5px;margin-right: 5px;">
+							<a href="bootstrap_writer.html">글쓰기<span class="badge"></span></a>
+						</li>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<input type="button" id="search_btn" class="btn btn-default" value="검색">
+					</form>
+					</ul>
+				</nav>
+			</div>
+			<div id="mid">
+				<form name="form1" method="get">
+					<div class="jumbotron">
+					<h1 style="padding-left: 50px;padding-right: 50px;">게시판</h1>
+					<p style="padding-left: 50px;padding-right: 50px;">이 게시판은 Test용 입니다. 로그인&회원가입하셔야합니다.</p>
+					<p style="padding-left: 50px;padding-right: 50px;">
+						<a id="login_btn" class="btn btn-primary btn-lg" style="padding-left: 25px;padding-right: 25px;" href="#" role="button">로그인</a>
+					</p>
+					<p style="padding-left: 50px;padding-right: 50px;">
+						<a id="signup_btn" class="btn btn-primary btn-lg"  href="#" role="button">회원가입</a>
+					</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>글쓰기</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		.form-control{
+			width:60%;
+		}
+		#article_title{
+			margin:20px;
+			
+		}
+		#article_main{
+			margin:20px;
+			
+		}
+	
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<nav class="navbar navbar-inverse">
+					<ul class="nav nav-pills" role="tablist" style="margin-top: 10px;margin-bottom: 5px;">
+						<li role="presentation" class="active" style="margin-left: 5px;margin-right: 5px;">
+						<li role="presentation" class="active" style="margin-left: 5px;margin-right: 5px;">
+						<a href="bootstrap_home.html">Home<span class="badge"></span></a>
+						</li>
+						<li role="presentation" class="active" style="margin-left: 5px;margin-right: 5px;">
+							<a href="bootstrap_home.html">로그아웃<span class="badge"></span></a>
+						</li>
+						<li role="presentation" class="active" style="margin-left: 5px;margin-right: 5px;">
+							<a href="bootstrap_list.html">글목록<span class="badge"></span></a>
+						</li>
+						</li>
+						<li role="presentation" class="active" style="margin-left: 5px;margin-right: 5px;">
+							<a href="bootstrap_writer.html">글쓰기<span class="badge"></span></a>
+						</li>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<input type="button"  class="btn btn-default" value="검색">
+					</form>
+					</ul>
+				</nav>
+			</div>
+			
+			<div>
+				<!--글쓰기 -->
+				<p id="article_title">제목</p><input type="text" id="article_title" class="form-control" placeholder="제목">
+				<p id="article_main">내용</p><textarea id="article_main" class="form-control" placeholder="내용" rows="10"></textarea>
+			</div>
+		</div>
+	</body>
+</html>
